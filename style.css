@@ -1,0 +1,124 @@
+@font-face {
+    font-family: spotify-regular;
+    src: url(font/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+}
+
+@font-face {
+    font-family: spotify-bold;
+    src: url(font/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+}
+
+@font-face {
+    font-family: spotify-title;
+    src: url(font/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+header {
+    padding-inline: 16px;
+    background-color: #000000;
+    height: 56px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-section {
+    display: flex;
+}
+
+.header-button {
+    font-family: spotify-bold;
+    font-size: 13px;
+    font-weight: 700;
+    align-self: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 9999px;
+    color: #000;
+    min-block-size: 32px;
+    padding-block: 4px;
+    padding-inline: 16px;
+    border: none;
+}
+
+.header-three-line {
+    background: transparent;
+    border: none;
+    margin-inline-start: 16px;
+    position: relative;
+    top: 1px;
+}
+
+.main-container {
+    margin-top: 56px;
+    position: relative;
+}
+
+.product-section-heading {
+    padding-inline: 16px;
+    padding-top: 24px;
+    margin-bottom: 12px;
+}    
+
+.product-section-heading h2 {
+    font-size: 20px;
+    font-family: spotify-title;
+}
+
+.product-scroll {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px;
+}
+
+.product-card:first-child {
+    margin-inline-start: 8px;
+}
+
+.product-card:last-child {
+    margin-inline-end: 8px;
+}
+
+.product-card img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    height: 152px;
+    width: 152px;
+}
+
+.product-name {
+    font-family: spotify-regular;
+    font-weight: 400;
+}
+
