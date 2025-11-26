@@ -39,6 +39,12 @@ header {
     justify-content: space-between;
 }
 
+.header-mobile-view {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -284,22 +290,22 @@ hr {
     color: #b3b3b3;
 }
 
-@media screen and (min-width: 768px){
-    
-    .footer-elements{
+@media screen and (min-width: 768px) {
+
+    .footer-elements {
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
-           
+
     .footer-element-section {
         width: 40%;
-        margin-right: 24px;  
+        margin-right: 24px;
     }
 
 }
 
 @media screen and (min-width: 992px) {
-    
+
     nav {
         padding-inline: 32px;
     }
@@ -324,7 +330,7 @@ hr {
 
     .copy-right {
         padding-right: 16px;
-    }  
+    }
 
     .english-section {
         display: none;
@@ -333,9 +339,74 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
-    
-    .footer-navigation {      
-        padding-bottom: 22px;
+
+    body {
+        background-color: #000;
+        /* display: grid; */
+        gap: 8px;
+        grid-template-columns: "top-banner top-banner top-banner"
+            "global-nav global-nav global-nav"
+            "left-sidebar main-view right-sidebar"
+            "now-playing-bar now-playing-bar now-playing-bar";
+
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        min-height: 100%;
+        /* padding: 8px; */
+        position: relative;
+        width: 100%;
     }
+
+    header {
+        height: calc(48px + 8px * 2);
+        padding: 0;
+    }
+
+    .header-mobile-view {
+        display: none;
+    }
+
+    .header-desktop-view {
+        grid-area: top-banner / 1 / global-nav / -1;
+        margin: calc(8px * -1);
+        margin: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(48px + 8px * 2);
+        position: relative;
+    }
+
+    .spotify-logo {
+        margin: 20px;
+    }
+
+    .spotify-search-section {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+
+    .header-home-section {
+        margin-inline-start: 8px;
+        background-color: #1f1f1f;
+        padding: 12px;
+        border-radius: 9999px;
+    }
+
+    .header-search-section {
+        padding-inline: 8px;
+        position: relative;
+        width: 100%;
+    }
+
+    
+
+
+
+
 
 }
