@@ -26,23 +26,23 @@ body {
 }
 
 header {
-    padding-inline: 16px;
     background-color: #000000;
     height: 56px;
     position: fixed;
     z-index: 2;
-    left: 0;
-    right: 0;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .header-mobile-view {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-inline: 16px;
+
 }
 
 .header-mobile-logo {
@@ -89,7 +89,7 @@ header {
 
     .header-desktop-view {
         display: flex;
-        align-items: center;  
+        align-items: center;
         padding: 8px;
         width: 100%;
     }
@@ -202,7 +202,7 @@ header {
         border-radius: 50px;
         min-block-size: 48px;
     }
-    
+
     .desktop-input-section {
         display: none;
     }
@@ -214,7 +214,7 @@ header {
 }
 
 @media screen and (min-width: 1069px) {
-    
+
     .desktop-search-button {
         width: 100%;
         padding-right: 16px;
@@ -252,8 +252,7 @@ header {
 
     }
 
-    .spotify-search-bar-icon img {
-    }
+    .spotify-search-bar-icon img {}
 
 
 }
