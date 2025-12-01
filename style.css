@@ -137,11 +137,11 @@ header {
         width: 100%;
     }
 
-    .desktop-premium-button {
+    .desktop-premium-link {
         padding-block: 8px;
     }
 
-    .desktop-premium-button a {
+    .desktop-premium-link a {
         color: #b3b3b3;
         min-block-size: 48px;
         font-family: spotify-bold;
