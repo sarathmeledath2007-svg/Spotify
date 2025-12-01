@@ -50,7 +50,7 @@ header {
     align-items: center;
 }
 
-.header-mobile-menu-section {
+.header-mobile-menu-wrapper {
     display: flex;
 }
 
@@ -132,12 +132,13 @@ header {
         align-items: center;
     }
 
-    .desktop-menu-section {
+    .desktop-menu-container {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         gap: 8px;
         flex-direction: row;
+        width: 100%;
     }
 
     .desktop-premium-button {
@@ -181,7 +182,7 @@ header {
         top: 6px;
     }
 
-    .desktop-sign-up-section {
+    .desktop-sign-up-wrapper {
         display: flex;
         align-items: center;
     }
@@ -232,13 +233,13 @@ header {
 
     .desktop-search-section {
         transition: box-shadow .22s ease-in, background .22s ease-in, color .22s ease-in, -webkit-box-shadow .22s ease-in;
+        max-width: 474px;
     }
 
     .desktop-search-button {
         width: 100%;
         padding-right: 16px;
         padding-top: 11px;
-        /* padding-bottom: 10px; */
     }
 
     .desktop-search-img {
@@ -247,9 +248,9 @@ header {
         top: 1px;
     }    
 
-    .desktop-input-section {
+    .desktop-input-container {
         display: flex;
-        width: 100%;
+        width: 100%;    
         position: relative;
         top: 2px;
     }
@@ -279,7 +280,9 @@ header {
         height: 25.05px;
     }
 
-    .spotify-search-bar-icon img {}
+    .spotify-search-bar-icon img {
+
+    }
 
 
 }
