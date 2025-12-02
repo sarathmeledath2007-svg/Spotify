@@ -98,29 +98,29 @@ body {
         flex-direction: column;
     }
 
-    .side-navication-header {
+    .side-navigation-header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         position: relative;
-        padding: 16px 16px 8px 16px;
+        padding: 16px 14px 8px 16px;
         align-items: center;
         color: #ffffff;
     }
 
-    .side-navication-header span h1 {
+    .side-navigation-header span h1 {
         margin-inline-start: 4px;
         font-weight: 700;
         font-family: spotify-bold;
         font-size: 16px;
     }
 
-    .side-navication-empty-div {
-        width: 100%;
+    .side-navigation-empty-div {
+        max-width: 100%;
         margin: 8px 16px;
     }
 
-    .side-navication-header button {
+    .side-navigation-header button {
         min-block-size: 35px;
         min-inline-size: 35px;
         background-color: transparent;
@@ -130,7 +130,7 @@ body {
         align-items: center;
     }
 
-    .side-navication-product {
+    .side-navigation-product {
         display: flex;
         align-items: stretch;
         flex-direction: column;
@@ -144,7 +144,7 @@ body {
         height: 0;
     }
 
-    .side-navication-product-card {
+    .side-navigation-product-card {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -155,7 +155,7 @@ body {
         gap: 20px;
     }
 
-    .side-navication-card-content {
+    .side-navigation-card-content {
         display: flex;
         gap: 8px;
         flex-direction: column;
@@ -175,10 +175,10 @@ body {
         font-family: spotify-regular;
     }
 
-    .side-navication-product-card button {
+    .side-navigation-product-card button {
         font-weight: 700;
-        font-size: 13px;
-        font-family: spotify-regular;
+        font-size: 14px;
+        font-family: spotify-bold;
         background-color: #fff;
         border-radius: 50px;
         text-align: center;
@@ -252,6 +252,26 @@ body {
         border-radius: 8px;
         overflow: hidden !important;
         overflow-y: scroll !important;
+    }
+
+    .product-section-heading {
+        padding-inline: 40px;
+    }
+
+    .product-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .product-card {
+        padding: 12px;
+    }
+
+    .product-card:first-child {
+        margin-inline-start: 28px;
+    }
+
+    .artist-img {
+        border-radius: 80px !important;
     }
 
 }
