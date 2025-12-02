@@ -212,8 +212,8 @@ header {
     text-decoration: none;
   }
 
-  .desktop-input-container {
-    display: none;
+  .desktop-input-container {    
+    display: none; 
   }
 
   .spotify-search-bar-icon {
@@ -267,6 +267,26 @@ header {
     height: 25.05px;
   }
 
-  .spotify-search-bar-icon img {
+}
+
+@media screen and (min-width: 1723px) {
+  
+  .header-desktop-view {
+    justify-content: space-between;
   }
+
+  .desktop-home-search {
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-menu-container {
+    width: fit-content;
+  }
+
 }
