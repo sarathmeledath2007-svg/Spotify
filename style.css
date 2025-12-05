@@ -1,0 +1,276 @@
+@font-face {
+    font-family: spotify-regular;
+    src: url(font/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+}
+
+@font-face {
+    font-family: spotify-bold;
+    src: url(font/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+}
+
+@font-face {
+    font-family: spotify-title;
+    src: url(font/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.spotify-content-container {
+    margin-top: 56px;
+    padding-bottom: 70px;
+    display: flex;
+    margin-inline: 8px;
+    gap: 8px;
+    padding-block: 8px;
+}
+
+.product-section-heading {
+    padding-inline: 16px;
+    padding-top: 24px;
+    margin-bottom: 12px;
+}
+
+.product-section-heading h2 {
+    font-size: 20px;
+    font-family: spotify-title;
+}
+
+.product-scroll {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px;
+}
+
+.product-card:first-child {
+    margin-inline-start: 8px;
+}
+
+.product-card:last-child {
+    margin-inline-end: 8px;
+}
+
+.product-card img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    height: 152px;
+    width: 152px;
+}
+
+.product-name {
+    font-family: spotify-regular;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 960px) {
+    .side-navigation-bar {
+        position: relative;
+        display: flex;
+        background-color: #121212;
+        border-radius: 8px;
+        flex-direction: column;
+        min-width: 280px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .side-navigation-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-navigation-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding: 16px 14px 8px 16px;
+        align-items: center;
+        color: #ffffff;
+    }
+
+    .side-navigation-heading h1 {
+        margin-inline-start: 4px;
+        font-weight: 700;
+        font-family: spotify-bold;
+        font-size: 16px;
+    }
+
+    .side-navigation-empty-div {
+        max-width: 100%;
+        margin: 8px 16px;
+    }
+
+    .side-navigation-heading button {
+        min-block-size: 35px;
+        min-inline-size: 35px;
+        background-color: transparent;
+        border: 0;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .side-navigation-product {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 8px 8px;
+        min-height: 100%;
+    }
+
+    .empty-div {
+        width: 100%;
+        height: 0;
+    }
+
+    .side-navigation-product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #1f1f1f;
+        border-radius: 8px;
+        margin: 8px 0;
+        padding: 16px 20px;
+        gap: 20px;
+    }
+
+    .side-navigation-card-content {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .side-nav-card-content-heading {
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: spotify-bold;
+    }
+
+    .side-nav-card-content-text {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: spotify-regular;
+    }
+
+    .side-navigation-product-card button {
+        font-weight: 700;
+        font-size: 14px;
+        font-family: spotify-bold;
+        background-color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        border: 0;
+        padding: 4px 16px;
+        min-block-size: 32px;
+    }
+
+    .side-navigation-footer {
+        margin: 32px 0;
+        padding: 0 24px;
+        text-align: start;
+    }
+
+    .side-nav-footer-elements-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side-nav-footer-elements {
+        margin-right: 16px;
+        margin-bottom: 8px;
+    }
+
+    .side-nav-footer-elements a {
+        text-decoration: none;
+        border: none;
+        color: #656565;
+        font-family: spotify-regular;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .cookies-link {
+        color: #ffffff;
+        text-decoration: none;
+        padding-inline-end: 16px;
+    }
+
+    .cookies-link span {
+        font-family: spotify-regular;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .side-nav-footer-element-english {
+        margin-bottom: 32px;
+        padding: 0 24px;
+    }    
+
+    .side-nav-footer-element-english button {
+        background-color: transparent;
+        border-radius: 50px;
+        border: 1px solid #7c7c7c;
+        color: #fff;
+        padding: 4px 16px 4px 36px;
+        position: relative;
+        min-block-size: 32px;
+        font-size: 14px;
+        font-family: spotify-bold;
+        font-weight: 700;
+    }
+
+    .side-nav-footer-element-english button span {
+        position: absolute;
+        inset-inline-start: 12px;
+    }
+
+    .product-content {
+        background-color: #121212;
+        border-radius: 8px;
+        overflow: hidden !important;
+        overflow-y: scroll !important;
+    }
+
+    .product-section-heading {
+        padding-inline: 40px;
+    }
+
+    .product-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .product-card {
+        padding: 12px;
+    }
+
+    .product-card:first-child {
+        margin-inline-start: 28px;
+    }
+
+    .artist-img {
+        border-radius: 80px !important;
+    }
+
+}
