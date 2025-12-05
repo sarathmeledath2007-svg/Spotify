@@ -25,9 +25,8 @@ body {
 
 }
 
-.main-container {
+.spotify-content-container {
     margin-top: 56px;
-    position: relative;
     padding-bottom: 70px;
     display: flex;
     margin-inline: 8px;
@@ -98,7 +97,7 @@ body {
         flex-direction: column;
     }
 
-    .side-navigation-header {
+    .side-navigation-heading {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -108,7 +107,7 @@ body {
         color: #ffffff;
     }
 
-    .side-navigation-header span h1 {
+    .side-navigation-heading h1 {
         margin-inline-start: 4px;
         font-weight: 700;
         font-family: spotify-bold;
@@ -120,7 +119,7 @@ body {
         margin: 8px 16px;
     }
 
-    .side-navigation-header button {
+    .side-navigation-heading button {
         min-block-size: 35px;
         min-inline-size: 35px;
         background-color: transparent;
