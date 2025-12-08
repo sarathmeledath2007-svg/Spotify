@@ -81,6 +81,18 @@ body {
 }
 
 @media screen and (min-width: 960px) {
+
+    .spotify-content-container {
+        display: grid;
+        grid-template-areas:
+            "top-banner top-banner top-banner"
+            "global-nav global-nav global-nav"
+            "left-sidebar main-view right-sidebar"
+            "now-playing-bar now-playing-bar now-playing-bar";
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto 1fr auto;
+    }
+
     .side-navigation-bar {
         position: relative;
         display: flex;
@@ -90,6 +102,7 @@ body {
         min-width: 280px;
         height: 100%;
         overflow: hidden;
+        grid-area: left-sidebar;
     }
 
     .side-navigation-content {
@@ -226,7 +239,7 @@ body {
     .side-nav-footer-element-english {
         margin-bottom: 32px;
         padding: 0 24px;
-    }    
+    }
 
     .side-nav-footer-element-english button {
         background-color: transparent;
@@ -251,6 +264,7 @@ body {
         border-radius: 8px;
         overflow: hidden !important;
         overflow-y: scroll !important;
+        grid-area: main-view / main-view / main-view / right-sidebar;
     }
 
     .product-section-heading {
@@ -272,5 +286,51 @@ body {
     .artist-img {
         border-radius: 80px !important;
     }
+
+    .footer-sign-up-bar {
+        background-color: #000;
+        grid-area: now-playing-bar;
+        padding: 8px;
+        z-index: 6;
+        background-image: linear-gradient(90deg, #af2896, #509bf5);
+        display: flex;
+        justify-content: space-between;
+        padding-block: 11px 7px;
+        padding-inline: 15px 24px;
+        position: relative;
+        align-items: center; 
+    }
+
+    .footer-sign-up-content {
+        margin: 0 0 0 4px;
+        color: #fff;
+    }
+
+    .footer-sign-up-heading {
+        font-weight: 700;
+        font-size: 14px;
+        font-family: spotify-bold;
+    }
+
+    .footer-sign-up-text {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: spotify-regular;
+    }
+    
+    .footer-sign-up-button {
+        font-weight: 700;
+        font-size: 16px;
+        font-family: spotify-bold;          
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        min-block-size: 48px;
+        padding-inline: 32px;
+        color: #000;
+        background-color: #fff;
+    }
+
+
 
 }
