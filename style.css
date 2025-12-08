@@ -142,6 +142,8 @@ header {
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 
   .vertical-line {
@@ -152,8 +154,9 @@ header {
   }
 
   .desktop-install-button {
-    padding: 4px 16px 4px 36px;
-    position: relative;
+    padding: 4px 16px 4px 12px;
+    display: flex;
+    gap: 8px;
   }
 
   .desktop-install-button a {
@@ -164,12 +167,6 @@ header {
     display: flex;
     text-wrap: nowrap;
     text-decoration: none;
-  }
-
-  .desktop-install-button img {
-    position: absolute;
-    left: 12px;
-    top: 6px;
   }
 
   .desktop-sign-up-wrapper {
