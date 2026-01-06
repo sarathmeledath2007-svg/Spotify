@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="header-mobile-view">
-        <div class="header-mobile-logo">
-          <img src="images/header-logo.svg" alt="header-logo" />
-        </div>
-        <div class="header-mobile-menu-wrapper">
-          <button class="header-mobile-button">Open App</button>
-          <button class="header-mobile-menu-icon">
-            <img src="images/menu-icon.svg" alt="menu-icon-image" />
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-mobile-view">
+      <div class="header-mobile-logo">
+        <img src="images/header-logo.svg" alt="header-logo" />
       </div>
-      <div class="header-desktop-view">
-        <div class="header-desktop-logo">
-          <img
-            src="images/spotify-logo-desktop.svg"
-            alt="spotify desktop logo"
-          />
-        </div>
-        <div class="desktop-home-search">
-          <button class="desktop-home-button">
-            <img src="images/home.svg" alt="header-desktop-home" />
-          </button>
-          <button class="desktop-search-button">
-            <img
-              src="images/search-icon.svg"
-              alt="header-desktop-search"
-              class="desktop-search-img"
-            />
-            <div class="desktop-input-container">
-              <input type="search" placeholder="What do you want to play?" />
-              <div class="spotify-search-bar-icon">
-                <img
-                  src="images/spotify-search-bar-icon.svg"
-                  alt="spotify search bar icon"
-                />
-              </div>
+      <div class="header-mobile-menu-wrapper">
+        <button class="header-mobile-button">Open App</button>
+        <button class="header-mobile-menu-icon">
+          <img src="images/menu-icon.svg" alt="menu-icon-image" />
+        </button>
+      </div>
+    </div>
+    <div class="header-desktop-view">
+      <div class="header-desktop-logo">
+        <img src="images/spotify-logo-desktop.svg" alt="spotify desktop logo" />
+      </div>
+      <div class="desktop-home-search">
+        <button class="desktop-home-button">
+          <img src="images/home.svg" alt="header-desktop-home" />
+        </button>
+        <button class="desktop-search-button">
+          <img src="images/search-icon.svg" alt="header-desktop-search" class="desktop-search-img" />
+          <div class="desktop-input-container">
+            <input type="search" placeholder="What do you want to play?" />
+            <div class="spotify-search-bar-icon">
+              <img src="images/spotify-search-bar-icon.svg" alt="spotify search bar icon" />
             </div>
-          </button>
+          </div>
+        </button>
+      </div>
+      <div class="desktop-menu-container">
+        <a href="#" class="desktop-premium-link">Premium</a>
+        <a href="#" class="desktop-premium-link">Support</a>
+        <a href="#" class="desktop-premium-link">Download</a>
+        <div class="vertical-line"></div>
+        <div class="desktop-install-button">
+          <img src="images/download-icon.svg" alt="Download icon" />
+          <a href="#">Install App</a>
         </div>
-        <div class="desktop-menu-container">
-          <a href="#" class="desktop-premium-link">Premium</a>
-          <a href="#" class="desktop-premium-link">Support</a>
-          <a href="#" class="desktop-premium-link">Download</a>
-          <div class="vertical-line"></div>
-          <div class="desktop-install-button">
-            <img src="images/download-icon.svg" alt="Download icon" />
-            <a href="#">Install App</a>
-          </div>
-          <div class="desktop-sign-up-wrapper">
-            <a href="#" class="desktop-sign-link">Sign up</a>
-            <button class="desktop-login-button">Log in</button>
-          </div>
+        <div class="desktop-sign-up-wrapper">
+          <a href="#" class="desktop-sign-link">Sign up</a>
+          <button class="desktop-login-button">Log in</button>
         </div>
       </div>
-    </header>
-  </body>
+    </div>
+  </header>
+</body>
+
 </html>
