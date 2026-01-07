@@ -90,6 +90,7 @@ header {
     align-items: center;
     padding: 8px;
     width: 100%;
+    grid-area: top-banner / 1 / global-nav / -1;
   }
 
   .header-desktop-logo {
