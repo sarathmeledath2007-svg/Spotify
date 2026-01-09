@@ -19,22 +19,75 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #121212;
   color: #fff;
   font-size: 16px;
 }
 
+header {
+  background-color: #000000;
+  height: 56px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-mobile-view {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-inline: 16px;
+}
+
+.header-mobile-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-mobile-menu-wrapper {
+  display: flex;
+}
+
+.header-mobile-button {
+  font-family: spotify-bold;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 50px;
+  min-block-size: 32px;
+  padding-inline: 16px;
+  border: none;
+}
+
+.header-mobile-menu-icon {
+  background: transparent;
+  border: none;
+  margin-inline-start: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-desktop-view {
+  display: none;
+}
+
 .spotify-content-container {
-  margin-inline: 8px;
+  margin-top: 56px;
+  padding-bottom: 70px;
+  gap: 8px;
   padding-block: 8px;
 }
 
 .product-section-heading {
-  font-size: 20px;
-  font-family: spotify-title;
   padding-inline: 16px;
   padding-top: 24px;
   margin-bottom: 12px;
+  font-size: 20px;
+  font-family: spotify-title;
 }
 
 .product-scroll {
@@ -67,36 +120,159 @@ body {
   width: 152px;
 }
 
-.product-details-wrapper {
+.product-name {
   font-family: spotify-regular;
   font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.product-details {
-  display: none;
 }
 
 .side-navigation-bar {
   display: none;
 }
 
-.footer-sign-up-bar {
+.product-details {
   display: none;
 }
 
 @media screen and (min-width: 960px) {
+  body {
+    background-color: #000000;
+  }
+
+  header {
+    height: 64px;
+    padding: 0;
+  }
+
+  .header-mobile-view {
+    display: none;
+  }
+
+  .header-desktop-view {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .header-desktop-logo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .desktop-home-search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .desktop-home-button {
+    background-color: #1f1f1f;
+    border: none;
+    padding: 12px;
+    margin-left: 8px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-search-button {
+    background-color: #1f1f1f;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin-inline: 8px;
+  }
+
+  .desktop-menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .desktop-premium-link {
+    padding-block: 8px;
+    color: #b3b3b3;
+    min-block-size: 48px;
+    font-family: spotify-bold;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-premium-link:nth-child(3) {
+    padding-right: 16px;
+  }
+
+  .desktop-install-button {
+    padding: 2px 16px 2px 36px;
+    display: flex;
+    gap: 8px;
+    border-left: 1px solid;
+  }
+
+  .desktop-install-button a {
+    font-family: spotify-bold;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b3b3b3;
+    display: flex;
+    text-wrap: nowrap;
+    text-decoration: none;
+  }
+
+  .desktop-sign-up-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-sign-link {
+    padding: 4px 16px 4px 8px;
+    font-family: spotify-bold;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b3b3b3;
+    display: flex;
+    text-wrap: nowrap;
+    text-decoration: none;
+  }
+
+  .desktop-login-button {
+    text-wrap: nowrap;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    min-block-size: 48px;
+    font-family: spotify-bold;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .desktop-input-container {
+    display: none;
+  }
+
+  .spotify-search-bar-icon {
+    display: none;
+  }
+
   .spotify-content-container {
-    display: grid;
-    grid-template-areas:
-      "top-banner top-banner top-banner"
-      "global-nav global-nav global-nav"
-      "left-sidebar main-view right-sidebar"
-      "now-playing-bar now-playing-bar now-playing-bar";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    display: flex;
+    gap: 8px;
+    margin-inline: 8px;
     height: 100vh;
     gap: 8px;
   }
@@ -110,7 +286,6 @@ body {
     max-width: 420px;
     height: 100%;
     overflow: hidden;
-    grid-area: left-sidebar;
   }
 
   .side-navigation-content {
@@ -209,7 +384,6 @@ body {
   }
 
   .product-content-wrapper {
-    grid-area: main-view / main-view / main-view / right-sidebar;
     overflow: auto;
     background-color: #121212;
     border-radius: 8px;
@@ -218,8 +392,8 @@ body {
   .product-content {
     overflow: hidden !important;
     overflow-y: scroll !important;
-    grid-area: main-view / main-view / main-view / right-sidebar;
-    padding: 4px 0px 32px;
+    padding: 0px 0px 32px;
+    scrollbar-width: none;
   }
 
   .product-section-heading {
@@ -239,6 +413,18 @@ body {
     border-radius: 80px !important;
   }
 
+  .product-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .product-details-wrapper p {
+    font-family: spotify-regular;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
   .product-details {
     display: flex;
     flex-wrap: wrap;
@@ -254,5 +440,69 @@ body {
 
   .product-details-name {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1069px) {
+  .desktop-search-button {
+    width: 100%;
+    padding-right: 16px;
+    padding-top: 11px;
+    max-width: 474px;
+  }
+
+  .desktop-search-img {
+    padding-inline-end: 12px;
+    position: relative;
+    top: 1px;
+  }
+
+  .desktop-input-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .desktop-search-button input {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding-inline-end: 8px;
+  }
+
+  .desktop-search-button input::placeholder {
+    font-family: spotify-regular;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #b3b3b3;
+  }
+
+  .spotify-search-bar-icon {
+    display: block;
+    border-inline-start: 1px solid #7c7c7c;
+    padding-inline: 12px 0;
+    height: 25.05px;
+  }
+}
+
+@media screen and (min-width: 1723px) {
+  .header-desktop-view {
+    justify-content: space-between;
+  }
+
+  .desktop-home-search {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desktop-menu-container {
+    width: fit-content;
   }
 }

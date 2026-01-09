@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,51 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-mobile-view">
+        <div class="header-mobile-logo">
+          <img src="images/header-logo.svg" alt="header-logo" />
+        </div>
+        <div class="header-mobile-menu-wrapper">
+          <button class="header-mobile-button">Open App</button>
+          <button class="header-mobile-menu-icon">
+            <img src="images/menu-icon.svg" alt="menu-icon-image" />
+          </button>
+        </div>
+      </div>
+      <div class="header-desktop-view">
+        <div class="header-desktop-logo">
+          <img src="images/spotify-logo-desktop.svg" alt="spotify desktop logo" />
+        </div>
+        <div class="desktop-home-search">
+          <button class="desktop-home-button">
+            <img src="images/home.svg" alt="header-desktop-home" />
+          </button>
+          <div class="desktop-search-button">
+            <img src="images/search-icon.svg" alt="header-desktop-search" class="desktop-search-img" />
+            <div class="desktop-input-container">
+              <input type="search" placeholder="What do you want to play?" />
+              <div class="spotify-search-bar-icon">
+                <img src="images/spotify-search-bar-icon.svg" alt="spotify search bar icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-menu-container">
+          <a href="#" class="desktop-premium-link">Premium</a>
+          <a href="#" class="desktop-premium-link">Support</a>
+          <a href="#" class="desktop-premium-link">Download</a>
+          <div class="desktop-install-button">
+            <img src="images/download-icon.svg" alt="Download icon" />
+            <a href="#">Install App</a>
+          </div>
+          <div class="desktop-sign-up-wrapper">
+            <a href="#" class="desktop-sign-link">Sign up</a>
+            <button class="desktop-login-button">Log in</button>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="spotify-content-container">
       <nav class="side-navigation-bar">
         <div class="side-navigation-content">
@@ -15,22 +60,22 @@
             <h1>Your Library</h1>
             <button><img src="images/plus-icon.svg" alt="plus icon" /></button>
           </div>
-          <hr class="side-navigation-empty-div" />
+          <div class="side-navigation-empty-div"></div>
           <div class="side-navigation-product">
-            <hr class="empty-div" />
+            <div class="empty-div"></div>
             <section class="side-navigation-product-card">
               <div class="side-navigation-card-content">
                 <span class="side-nav-card-content-heading">Create your first playlist</span>
                 <span class="side-nav-card-content-text">It’s easy, we’ll help you</span>
               </div>
-              <button>Create playlist</button>
+              <button><span>Create playlist</span></button>
             </section>
             <section class="side-navigation-product-card">
               <div class="side-navigation-card-content">
                 <span class="side-nav-card-content-heading">Let’s find some podcasts to follow</span>
                 <span class="side-nav-card-content-text">We’ll keep you updated on new episodes</span>
               </div>
-              <button>Browse podcasts</button>
+              <button><span>Browse podcasts</span></button>
             </section>
           </div>
         </div>
@@ -1157,6 +1202,10 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
+  </body>
+</html>
+
   </body>
 </html>
