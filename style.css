@@ -1,0 +1,259 @@
+@font-face {
+  font-family: spotify-regular;
+  src: url(font/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+}
+
+@font-face {
+  font-family: spotify-bold;
+  src: url(font/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+}
+
+@font-face {
+  font-family: spotify-title;
+  src: url(font/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+}
+
+.spotify-content-container {
+  margin-inline: 8px;
+  padding-block: 8px;
+}
+
+.product-section-heading {
+  font-size: 20px;
+  font-family: spotify-title;
+  padding-inline: 16px;
+  padding-top: 24px;
+  margin-bottom: 12px;
+}
+
+.product-scroll {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 8px;
+}
+
+.product-card:first-child {
+  margin-inline-start: 8px;
+}
+
+.product-card:last-child {
+  margin-inline-end: 8px;
+}
+
+.product-card img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+  height: 152px;
+  width: 152px;
+}
+
+.product-details-wrapper {
+  font-family: spotify-regular;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-details {
+  display: none;
+}
+
+.side-navigation-bar {
+  display: none;
+}
+
+.footer-sign-up-bar{
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  .spotify-content-container {
+    display: grid;
+    grid-template-areas:
+      "top-banner top-banner top-banner"
+      "global-nav global-nav global-nav"
+      "left-sidebar main-view right-sidebar"
+      "now-playing-bar now-playing-bar now-playing-bar";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+    gap: 8px;
+  }
+
+  .side-navigation-bar {
+    display: flex;
+    background-color: #121212;
+    border-radius: 8px;
+    flex-direction: column;
+    min-width: 280px;
+    max-width: 420px;
+    height: 100%;
+    overflow: hidden;
+    grid-area: left-sidebar;
+  }
+
+  .side-navigation-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-navigation-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 14px 8px 16px;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .side-navigation-heading h1 {
+    margin-inline-start: 4px;
+    font-weight: 700;
+    font-family: spotify-bold;
+    font-size: 16px;
+  }
+
+  .side-navigation-empty-div {
+    max-width: 100%;
+    margin: 8px 16px;
+    border: none;
+  }
+
+  .side-navigation-heading button {
+    min-block-size: 35px;
+    min-inline-size: 35px;
+    background-color: transparent;
+    border: 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .side-navigation-product {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 8px 8px;
+    min-height: 100%;
+  }
+
+  .empty-div {
+    width: 100%;
+    height: 0;
+    border: none;
+  }
+
+  .side-navigation-product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #1f1f1f;
+    border-radius: 8px;
+    margin: 8px 0;
+    padding: 16px 20px;
+    gap: 20px;
+  }
+
+  .side-navigation-card-content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .side-nav-card-content-heading {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: spotify-bold;
+  }
+
+  .side-nav-card-content-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: spotify-regular;
+  }
+
+  .side-navigation-product-card button {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: spotify-bold;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    border: 0;
+    padding: 4px 16px;
+    min-block-size: 32px;
+  }
+
+  .product-content-wrapper {
+    grid-area: main-view / main-view / main-view / right-sidebar;
+    overflow: auto;
+    background-color: #121212;
+    border-radius: 8px;
+  }
+
+  .product-content {
+    overflow: hidden !important;
+    overflow-y: scroll !important;
+    grid-area: main-view / main-view / main-view / right-sidebar;
+    padding: 4px 0px 32px;
+  }
+  
+  .product-section-heading {
+    padding-inline: 40px;
+    font-size: 24px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-card:first-child {
+    margin-inline-start: 28px;
+  }
+
+  .artist-img {
+    border-radius: 80px !important;
+  }
+
+  .product-details {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: spotify-regular;
+    font-size: 14px;
+    color: #b3b3b3;
+  }
+
+  .product-details a {
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+
+  .product-details-name {
+    display: none;
+  }
+
+ }
