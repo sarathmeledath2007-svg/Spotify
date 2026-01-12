@@ -76,10 +76,9 @@ header {
 }
 
 .spotify-content-container {
-  margin-top: 56px;
+  margin-top: 63px;
   padding-bottom: 70px;
   gap: 8px;
-  padding-block: 8px;
 }
 
 .product-heading-wrapper {
@@ -91,6 +90,10 @@ header {
 .product-section-heading {
   font-size: 20px;
   font-family: spotify-title;
+}
+
+.product-heading-wrapper a {
+  display: none;
 }
 
 .product-scroll {
@@ -123,7 +126,7 @@ header {
   width: 152px;
 }
 
-.product-name {
+.product-details-wrapper p {
   font-family: spotify-regular;
   font-weight: 400;
 }
@@ -299,7 +302,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 16px 14px 8px 16px;
+    padding: 17px 14px 8px 16px;
     align-items: center;
     color: #ffffff;
   }
@@ -404,6 +407,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 8px;
   }
 
   .product-section-heading {
@@ -418,14 +422,24 @@ header {
     font-size: 14px;
     margin-top: 2px;
     margin-inline-end: 8px;
+    display: flex;
   }
 
+  .product-scroll {
+    margin-bottom: 10px;
+  }
+    
   .product-card {
     padding: 12px;
-  }
+  }     
 
   .product-card:first-child {
     margin-inline-start: 28px;
+  }
+
+  .product-card img {
+    height: 153.72px;
+    width: 153.72px;
   }
 
   .artist-img {
@@ -435,7 +449,7 @@ header {
   .product-details-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
   }
 
   .product-details-wrapper p {
@@ -450,6 +464,7 @@ header {
     font-family: spotify-regular;
     font-size: 14px;
     color: #b3b3b3;
+    line-height: 22px;
   }
 
   .product-details a {
