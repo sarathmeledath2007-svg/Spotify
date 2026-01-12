@@ -82,7 +82,7 @@ header {
   padding-block: 8px;
 }
 
-.product-heading-wrapper{
+.product-heading-wrapper {
   padding-inline: 16px;
   padding-top: 24px;
   margin-bottom: 12px;
@@ -411,14 +411,14 @@ header {
   }
 
   .product-heading-wrapper a {
-  color: #b3b3b3;
-  text-decoration: none;
-  font-weight: 700;
-  font-family: spotify-regular;
-  font-size: 14px;
-  margin-top: 2px;
-  margin-inline-end: 8px;
-}
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: spotify-regular;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-inline-end: 8px;
+  }
 
   .product-card {
     padding: 12px;
