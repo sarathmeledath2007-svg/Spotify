@@ -445,7 +445,7 @@ header {
   }
 
   .artist-img {
-    border-radius: 80px !important;
+    border-radius: 90px !important;
   }
 
   .product-details-wrapper {
@@ -524,6 +524,20 @@ header {
   }
 }
 
+@media screen and (min-width: 1440px) {
+
+  .product-card img {
+    height: 171.5px;
+    width: 171.5px;
+  }
+
+  .product-scroll {
+    margin-bottom: 18px;
+  }
+
+
+}
+
 @media screen and (min-width: 1723px) {
   .header-desktop-view {
     justify-content: space-between;
@@ -541,4 +555,24 @@ header {
   .desktop-menu-container {
     width: fit-content;
   }
+
+    .side-navigation-bar {
+    height: 848px;
+  }
+
+  .product-content-wrapper {
+    height: 848px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  
+  .side-navigation-bar {
+    height: 1364px;
+  }
+
+  .product-content-wrapper {
+    height: 1364px;
+  }
+
 }
