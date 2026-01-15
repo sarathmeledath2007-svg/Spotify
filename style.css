@@ -862,6 +862,31 @@ header {
   .side-navigation-bar {
     min-width: 420px;
   }
+
+  .library-heading-button {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px 16px;
+  }
+
+  .library-heading-button-create {
+    color: #fff;
+    font-family: spotify-bold;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .footer-wrapper {
+    flex: 1;
+  }
+
+  .footer-section {
+    width: 20%;
+  }
+
+
+
 }
 
 @media screen and (min-width: 1723px) {
