@@ -519,11 +519,15 @@ header {
   .library-heading-button {
     min-block-size: 35px;
     min-inline-size: 35px;
-    background-color: transparent;
+    background-color: #1f1f1f;
     border: 0;
     padding: 8px;
     display: flex;
     align-items: center;
+    border-radius: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-inline-end: 2px;
   }
 
   .side-navigation-song {
@@ -581,7 +585,7 @@ header {
 
   .side-navigation-bottom-footer {
     display: block;
-    margin: 33px 0;
+    margin: 32px 0;
     padding: 0 24px;
   }
 
@@ -638,8 +642,8 @@ header {
   }
 
   .songs-list {
-  margin-bottom: 11px;
-}
+    margin-bottom: 11px;
+  }
 
   .playlist-container-heading {
     font-size: 24px;
@@ -673,6 +677,7 @@ header {
   .songs-card img {
     height: 153.72px;
     width: 153.72px;
+    border-radius: 6px;
   }
 
   .artist-img {
@@ -706,8 +711,8 @@ header {
   }
 
   footer {
-  padding-top: 17px;
-}
+    padding-top: 17px;
+  }
 
   .footer-nav {
     padding-top: 32px;
@@ -719,6 +724,7 @@ header {
   }
 
   .footer-copy-right-desktop {
+    display: block;
     color: #b3b3b3;
     font-size: 14px;
     font-weight: 400;
@@ -739,7 +745,6 @@ header {
     padding-inline: 15px 24px;
     align-items: center;
     margin: 8px;
-    border-radius: 8px;
   }
 
   .footer-sign-up-content {
@@ -774,8 +779,6 @@ header {
     border: none;
   }
 
-
-
   .songs-details-name {
     display: none;
   }
@@ -787,6 +790,27 @@ header {
   .footer-bottom {
     display: none;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-elements {
+    display: flex;
+    padding-inline: 16px;
+  }
+
+  .footer-wrapper {
+    flex-flow: inherit;
+  }
+
+  .footer-social-media{
+    margin-top: 32px;
+  }
+
+  .footer-bottom-last {
+    padding-inline: 16px;
+  }
+
+
 }
 
 @media screen and (min-width: 1069px) {
