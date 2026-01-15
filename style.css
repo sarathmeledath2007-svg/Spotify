@@ -543,6 +543,16 @@ header {
 
   .songs-content-wrapper {
     height: 848px;
+    scrollbar-width: none;
+  }
+
+  .songs-list {
+    margin-bottom: 18px;
+  }
+
+  .songs-card img {
+    height: 171.5px;
+    width: 171.5px;
   }
 }
 
