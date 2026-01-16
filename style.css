@@ -530,6 +530,10 @@ header {
     margin-inline-end: 2px;
   }
 
+  .library-heading-button-create {
+    display: none;
+  }
+
   .side-navigation-song {
     display: flex;
     align-items: stretch;
@@ -802,15 +806,13 @@ header {
     flex-flow: inherit;
   }
 
-  .footer-social-media{
+  .footer-social-media {
     margin-top: 32px;
   }
 
   .footer-bottom-last {
     padding-inline: 16px;
   }
-
-
 }
 
 @media screen and (min-width: 1069px) {
@@ -841,7 +843,7 @@ header {
   }
 
   .desktop-search-button input::placeholder {
-    font-family: spotify-regular;
+    font-family: spotify-regular;   
     font-size: 16px;
     font-weight: 400;
     overflow: hidden;
@@ -871,6 +873,7 @@ header {
   }
 
   .library-heading-button-create {
+    display: block;
     color: #fff;
     font-family: spotify-bold;
     font-size: 14px;
@@ -884,9 +887,6 @@ header {
   .footer-section {
     width: 20%;
   }
-
-
-
 }
 
 @media screen and (min-width: 1723px) {
@@ -903,21 +903,25 @@ header {
     justify-content: center;
   }
 
+  .desktop-search-button {
+    max-width: 446px;
+  }
+
   .desktop-menu-container {
     width: fit-content;
   }
 
   .side-navigation-bar {
-    height: 848px;
+    height: 847px;
   }
 
   .songs-content-wrapper {
-    height: 848px;
+    height: 847px;
     scrollbar-width: none;
   }
 
   .songs-list {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
   }
 
   .songs-card img {
@@ -927,7 +931,7 @@ header {
 }
 
 @media screen and (min-width: 2560px) {
-  .side-navigation-bar {
+  .side-navigation-bar {   
     height: 1364px;
   }
 
