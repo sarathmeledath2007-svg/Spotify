@@ -167,6 +167,7 @@ header {
   font-weight: 700;
   font-family: spotify-bold;
   margin-bottom: 8px;
+  text-decoration: none;
 }
 
 .footer-section-text {
