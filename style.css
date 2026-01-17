@@ -300,7 +300,13 @@ header {
   width: 24px;
 }
 
-.navigation-panel-text {
+.navigation-panel-home-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation-panel-link {
+  text-decoration: none;
   color: #b3b3b3;
 }
 
